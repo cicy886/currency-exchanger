@@ -8,6 +8,8 @@ $(document).ready(function() {
   $('#currencyExchange').click(function(){
     let currencyName = $('#anotherCurrency').val();
     let amount = parseFloat($('#amount').val());
+    $('#anotherCurrency').val("");
+    $('#amount').val("");
     if (isNaN(amount) || amount<0){
       $('.showErrors').text('Error! This is not a valid number');
     }
