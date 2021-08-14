@@ -11,6 +11,9 @@ $(document).ready(function() {
     if (isNaN(amount) || amount<0){
       $('.showErrors').text('Error! This is not a valid number');
     }
+    if (currencyName === "KPW" || currencyName === currencyName.toLowerCase("KPW")){
+      $('.showResult').text('Sorry, the North Korean Won is not supported at this time.');
+    }
     let promise = CurrencyService.getCurrency(currencyName,amount);
     promise.then(function(response){
       const body = JSON.parse(response);
