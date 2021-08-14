@@ -3,7 +3,7 @@ ___________
 #### By Sisi Vieira
 
 ## Description
-* A user should be able to enter an amount (in U.S. dollars) and then specify another currency. The user should then see the total amount they entered in converted currency.
+* A user should be able to enter an amount (in U.S. dollars) and then specify another currency (using dropdown menu). The user should then see the total amount they entered in converted currency.
 * If the currency user inputted is not support for currency exchange, the application should return a notification that states the currency in question doesn't exist.
 
 ## Technologies Used
